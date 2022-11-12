@@ -1,14 +1,3 @@
-const test = () => {
-	console.log('test');
-	console.log('fefre');
-};
+const greetings = () => console.log('Hello World!');
 
-const hello = ()=>{
-	
-}
-
-
-
-test();
-test();
-test();
+greetings();
