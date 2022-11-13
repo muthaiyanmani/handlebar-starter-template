@@ -13,9 +13,12 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-			js: path.resolve(__dirname, 'src/js'),
-			templates: path.resolve(__dirname, 'src/templates'),
-			css: path.resolve(__dirname, 'src/css')
+			js: path.resolve(__dirname, 'src/components/js'),
+			templates: path.resolve(__dirname, 'src/components/templates'),
+			css: path.resolve(__dirname, 'src/components/css'),
+			routes: path.resolve(__dirname, 'src/routes'),
+			components: path.resolve(__dirname, 'src/components'),
+			utils: path.resolve(__dirname, 'src/utils')
 		}
 	},
 	devServer: {
@@ -25,7 +28,7 @@ module.exports = {
 		// 🟠 Disabled HMR
 		hot: false,
 		compress: true,
-		port: 9000
+		port: 3000
 	},
 	module: {
 		rules: [{ test: /\.handlebars$/, loader: 'handlebars-loader' }]
