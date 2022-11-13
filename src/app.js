@@ -1,3 +1,3 @@
-const greetings = () => console.log('Hello World!');
+import { homePage } from './js/home';
 
-greetings();
+homePage();
